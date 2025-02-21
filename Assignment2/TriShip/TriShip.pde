@@ -4,7 +4,7 @@ float speed = 5; // Movement speed
 
 /* 
 It will be like space invaders but top is the ship(triangle and the enemys will be coming up
-from bottonw
+from bottom (
 */
 void setup(){
   
@@ -43,4 +43,26 @@ void keyPressed() {
     x3 += speed;
 
   } 
+}
+
+void keyReleased() {
+  if (key == 'a') {
+    x1 -= speed;
+
+    x2 -= speed;
+
+    x3 -= speed;
+  } else if (key == 'd') {
+
+    x1 += speed;
+
+    x2 += speed;
+
+    x3 += speed;
+
+  } 
+}
+
+if (x1, x2, x3 > 800) {
+  x1
 }
