@@ -1,5 +1,5 @@
 float x1, y1, x2, y2, x3, y3; // Triangle vertices
-float 
+float spacex1;
 float speed = 5; // Movement speed
 
 /* 
@@ -7,7 +7,8 @@ It will be like space invaders but top is the ship(triangle and the enemys will 
 from bottonw
 */
 void setup(){
-size(800,800);
+  
+  size(800,800);
   x1 = 25; 
   y1 = 25;
   x2 = 200; 
