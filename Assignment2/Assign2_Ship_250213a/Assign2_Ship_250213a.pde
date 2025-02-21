@@ -1,32 +1,45 @@
+float x1, y1, x2, y2, x3, y3; // Triangle vertices
+float 
+float speed = 5; // Movement speed
+
 /* 
-I want to make a game just like asteroid but blue
-I have two options, I can make the triangle folow the mouse 
-or I can control the triangle with wasd keys and aim with mouse
+It will be like space invaders but top is the ship(triangle and the enemys will be coming up
+from bottonw
 */
 void setup(){
-size(400,400);
+size(800,800);
+  x1 = 25; 
+  y1 = 25;
+  x2 = 200; 
+  y2 = 25;
+  x3 = 110;
+  y3 = 150;
 }
 
 void draw(){
   background(#000000);
   
-  // Calculate triangle points based on mouse position
-  float x = mouseX;
-  float y = mouseY;
-  float sideLength = 50; // Adjust for triangle size
+  triangle(x1, y1, x2, y2, x3, y3);
+  println(x1, y1, x2, y2, x3, y3);
+}
 
-  // Top point of the triangle
-  float topX = x;
-  float topY = y - sideLength / 3;
-  
-  // Bottom left point
-  float leftX = x - sideLength / 3;
-  float leftY = y + sideLength / 3;
+void keyPressed() {
 
-  // Bottom right point
-  float rightX = x + sideLength / 3;
-  float rightY = y + sideLength / 3;
-  
-  // Draw the triangle
-  triangle(leftX, leftY, topX, topY, rightX, rightY); 
+  if (key == 'a') {
+
+    x1 -= speed;
+
+    x2 -= speed;
+
+    x3 -= speed;
+
+  } else if (key == 'd') {
+
+    x1 += speed;
+
+    x2 += speed;
+
+    x3 += speed;
+
+  } 
 }
