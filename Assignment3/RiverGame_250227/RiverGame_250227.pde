@@ -13,7 +13,7 @@ void draw(){
   rect(0, 150, 600, 264); // make a class for this river to be death
   
   fill(#896215);
-  rect(50, 106, 87, 346);
-  rect(243, 121, 86, 325);
-  rect(460, 119, 84, 340);
+  rect(50, 112, 87, 346);
+  rect(253, 112, 87, 345);
+  rect(460, 112, 87, 348);
 }

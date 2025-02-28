@@ -63,6 +63,8 @@ void keyReleased() {
   } 
 }
 
-if (x1, x2, x3 > 800) {
-  x1
+/*if (x1, x2, x3 > 800) {
+  x1 = 400
+  
 }
+*/
