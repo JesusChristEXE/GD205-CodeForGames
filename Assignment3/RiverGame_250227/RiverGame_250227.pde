@@ -1,19 +1,20 @@
 /* 
-  river game but theres three bridges and you must chose between the three 
-  to go across the river. They will all look the same so it wont be easy to 
-  chose the right one
+  river game but you ar fish and need to swim up river and dodge obstelaces
 */
+PImage Fish;
+
 void setup(){
   size(600,600); 
+  Fish = loadImage("FISH.png");
 }
 
 void draw(){
   background(#52AF33);
   fill(#3094E3);
-  rect(0, 150, 600, 264); // make a class for this river to be death
-  
-  fill(#896215);
-  rect(50, 112, 87, 346);
-  rect(253, 112, 87, 345);
-  rect(460, 112, 87, 348);
+  rect(125, 0, 350, 600); // make a class for this river to be death  
+  image(Fish, 240, 300, width / 5, height / 5); // add code for fish to move and three lives
+
+  // make class for random rock location, drop speed, collision (I think...?)
+  fill(#767676);
+  circle(random(124,473), random(0,200 + 1), random(10, 40));
 }
