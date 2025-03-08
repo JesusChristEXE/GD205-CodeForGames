@@ -1,3 +1,4 @@
+// Array ;
 /* 
   river game but you ar fish and need to swim up river and dodge obstelaces
 */
@@ -16,5 +17,8 @@ void draw(){
 
   // make class for random rock location, drop speed, collision (I think...?)
   fill(#767676);
-  circle(random(124,473), random(0,200 + 1), random(10, 40));
+  rect(random(123, 458), 0, 20, 20);
+  println();
+  frameRate(1);
+  
 }
