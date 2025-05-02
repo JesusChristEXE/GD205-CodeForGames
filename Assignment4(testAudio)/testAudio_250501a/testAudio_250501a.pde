@@ -2,12 +2,14 @@ import processing.sound.*;
 
 SoundFile bullet;
 SoundFile button;
+SoundFile jumper;
 
 void setup(){
   size(800,600);
   
   bullet = new SoundFile(this, "data/BulletSound.mp3");
   button = new SoundFile(this, "data/ButtonButton.mp3");
+  jumper = new SoundFile(this, "data/JumpSound.mp3");
 }
 
 void draw(){
@@ -21,6 +23,7 @@ void draw(){
   if (mousePressed && dist(mouseX, mouseY, width/2, height/2) < 50) {
     if(!button.isPlaying()){
     button.play();
+    button.rate(2);
     }
   }
 }
